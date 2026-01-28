@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        width: 600px;
+        text-align: center;
+        margin: auto;
+      }
+      p {
+        color: #333;
+        background-color: aquamarine;
+        margin: auto;
+        padding: 30px;
+      }
+      .pflex {
+        display: flex;
+        gap: 10px;
+      }
+      h1 {
+        color: #007acc;
+        background-color: aqua;
+      }
+      .element {
+        width: 100px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: black;
+        font-weight: bold;
+      }
+      .container-flex {
+        display: flex;
+        justify-content: flex-start;
+        align-content: space-between;
+        margin-top: 20px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+        height: 300px;
+        border: 1px solid black;
+      }
+      .element1 {
+        background-color: lightcoral;
+      }
+      .element2 {
+        background-color: lightseagreen;
+      }
+      .element3 {
+        background-color: chartreuse;
+      }
+
+      .container-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(6, 100px);
+        gap: 10px;
+        margin-top: 20px;
+        border: 1px solid black;
+      }
+      .box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-weight: bold;
+        border-radius: 5px;
+      }
+      .une {
+        background-color: purple;
+        grid-column-start: 1;
+        grid-column-end: 4;
+      }
+      .deux {
+        background-color: orange;
+        grid-row-start: 2;
+        grid-row-end: 4;
+      }
+
+      .trois {
+        background-color: teal;
+      }
+      .quatre {
+        background-color: brown;
+      }
+      .cinq {
+        background-color: crimson;
+        grid-column-start: 2;
+        grid-column-end: 4;
+      }
+      .six {
+        background-color: darkgreen;
+        grid-column-start: 1;
+        grid-column-end: 3;
+      }
+
+      .sept {
+        background-color: navy;
+      }
+      .huit {
+        background-color: maroon;
+        grid-column-start: 1;
+        grid-column-end: 4;
+      }
+      .neuf {
+        background-color: olive;
+        grid-column-start: 1;
+        grid-column-end: 4;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Test Page 1</h1>
+    <div class="pflex">
+      <p>This is a sample HTML file named test1.html.</p>
+
+      <p>This is a sample HTML file named test1.html.</p>
+    </div>
+    <h1>Container flex</h1>
+
+    <div class="container-flex">
+      <div class="element element1">Élément 1</div>
+      <div class="element element2">Élément 2</div>
+      <div class="element element3">Élément 3</div>
+      <div class="element element1">Élément 4</div>
+      <div class="element element2">Élément 5</div>
+      <div class="element element3">Élément 6</div>
+      <div class="element element1">Élément 7</div>
+      <div class="element element2">Élément 8</div>
+      <div class="element element3">Élément 9</div>
+    </div>
+    <h1>Container grid</h1>
+
+    <div class="container-grid">
+      <div class="box une">🐸 Élément 1</div>
+      <div class="box deux">🦊 Élément 2</div>
+      <div class="box trois">🦄 Élément 3</div>
+      <div class="box quatre">🐶 Élément 4</div>
+      <div class="box cinq">🐨 Élément 5</div>
+      <div class="box six">🐒 Élément 6</div>
+      <div class="box sept">🦆 Élément 7</div>
+      <div class="box huit">🐙 Élément 8</div>
+      <div class="box neuf">🐋 Élément 9</div>
+    </div>
+
+  </body>
+</html>
